@@ -1,21 +1,19 @@
-const paintWalls = function(side, color) {
+const paintWalls = function(color) {
+    console.log ("The wall has been painted " + color);
+};
+
+const paintWalls2 = function(side, color) {
     console.log ("The",side, "wall has been painted",color);
 };
 
-const red = "red";
-const green = "green";
-const grey = "grey";
-const orange = "orange";
 
-const north = "north";
-const southEast = "south-east";
 
-// paintWalls(red);
-// paintWalls(green);
+paintWalls("red");
+paintWalls("green");
 
-// paintWalls();
+paintWalls();                               /*undifined*/
 
-paintWalls (north, orange);             /* The north wall has been painted orange*/
-paintWalls (southEast, grey);           /* The south-east wall has been painted grey*/
+paintWalls2 ("north", "orange");             /* The north wall has been painted orange*/
+paintWalls2 ("southEast", "grey");           /* The south-east wall has been painted grey*/
 
-paintWalls (orange, north);             /* Zet alles in de juiste volgorde; NIET zo dus --> The orange wall has been painted north*/
+paintWalls2 ("orange", "north");             /* Zet alles in de juiste volgorde; NIET zo dus --> The orange wall has been painted north*/
